@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,11 @@
 		5AC4D06C224B5D9900EAD2A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC4D06A224B5D9900EAD2A8 /* Main.storyboard */; };
 		5AC4D06E224B5D9C00EAD2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC4D06D224B5D9C00EAD2A8 /* Assets.xcassets */; };
 		5AC4D071224B5D9C00EAD2A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC4D06F224B5D9C00EAD2A8 /* LaunchScreen.storyboard */; };
+		5AC4D079224B5DB900EAD2A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4D078224B5DB900EAD2A8 /* Coordinator.swift */; };
+		5AC4D07B224B5E1D00EAD2A8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4D07A224B5E1C00EAD2A8 /* Storyboarded.swift */; };
+		5AC4D07D224B61DD00EAD2A8 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4D07C224B61DD00EAD2A8 /* MainCoordinator.swift */; };
+		5AC4D07F224B632000EAD2A8 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4D07E224B632000EAD2A8 /* BuyViewController.swift */; };
+		5AC4D081224B633500EAD2A8 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4D080224B633500EAD2A8 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		5AC4D06D224B5D9C00EAD2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AC4D070224B5D9C00EAD2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC4D072224B5D9C00EAD2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AC4D078224B5DB900EAD2A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5AC4D07A224B5E1C00EAD2A8 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5AC4D07C224B61DD00EAD2A8 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5AC4D07E224B632000EAD2A8 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		5AC4D080224B633500EAD2A8 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		5AC4D065224B5D9900EAD2A8 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				5AC4D078224B5DB900EAD2A8 /* Coordinator.swift */,
+				5AC4D07A224B5E1C00EAD2A8 /* Storyboarded.swift */,
 				5AC4D066224B5D9900EAD2A8 /* AppDelegate.swift */,
 				5AC4D068224B5D9900EAD2A8 /* ViewController.swift */,
 				5AC4D06A224B5D9900EAD2A8 /* Main.storyboard */,
+				5AC4D07C224B61DD00EAD2A8 /* MainCoordinator.swift */,
 				5AC4D06D224B5D9C00EAD2A8 /* Assets.xcassets */,
 				5AC4D06F224B5D9C00EAD2A8 /* LaunchScreen.storyboard */,
 				5AC4D072224B5D9C00EAD2A8 /* Info.plist */,
+				5AC4D07E224B632000EAD2A8 /* BuyViewController.swift */,
+				5AC4D080224B633500EAD2A8 /* CreateAccountViewController.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -100,7 +115,7 @@
 				};
 			};
 			buildConfigurationList = 5AC4D05E224B5D9900EAD2A8 /* Build configuration list for PBXProject "Coordinators" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4D081224B633500EAD2A8 /* CreateAccountViewController.swift in Sources */,
 				5AC4D069224B5D9900EAD2A8 /* ViewController.swift in Sources */,
 				5AC4D067224B5D9900EAD2A8 /* AppDelegate.swift in Sources */,
+				5AC4D079224B5DB900EAD2A8 /* Coordinator.swift in Sources */,
+				5AC4D07D224B61DD00EAD2A8 /* MainCoordinator.swift in Sources */,
+				5AC4D07B224B5E1D00EAD2A8 /* Storyboarded.swift in Sources */,
+				5AC4D07F224B632000EAD2A8 /* BuyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
